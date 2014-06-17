@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<% page_title = "GoodsBEE" %>
+    <title><%= page_title %></title>
+<!-- these are all atrributes (need quotes) -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+  </head>
+  <body>
+
+      <% nav_items = ["home", "about", "contact"] %>
+
+      <ul>
+          <% nav_items.each do |nav| %>
+          <li>
+            <a href="/<%=nav %>"<%=nav %></a>
+          </li>
+       <% end %>
+     </ul>
+  </body>
+</html>
